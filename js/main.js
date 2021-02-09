@@ -1,36 +1,33 @@
 import { Todo } from './components/Todo.js';
 
-const randomuzduotys = new Todo('Random uzduotys');
-const namuDarbai = new Todo('Namu darbai');
+const blynai = new Todo('Blynu kepimas');
 
-randomuzduotys.summary();
+//randomuzduotys.add('');
+//namuDarbai.add('');ynai.add('Uzmaisyti tesla');
 
-randomuzduotys.add('Sukurti pirma uzduoti');
-namuDarbai.add('Susitvarkyti Serloko projekta');
-namuDarbai.add('Susitvarkyti Serloko projekta');
-namuDarbai.add('Susitvarkyti Serloko projekta');
-randomuzduotys.add('Uzmaisyti tesla');
-namuDarbai.add('Susitvarkyti Serloko projekta');
-randomuzduotys.add('Nusiskusti');
-namuDarbai.add('Susitvarkyti Serloko projekta');
-namuDarbai.add('Susitvarkyti Serloko projekta');
 
-console.log(randomuzduotys);
-console.log(namuDarbai);
+blynai.add('Uzmaisyti tesla');
+blynai.add('Ijungti kaitlente');
+blynai.add('Istraukti keptuve');
+blynai.add('Ipilti tesla i keptuve');
+blynai.add('Apversti blynus');
+blynai.add('Isimti blynus');
+blynai.add('Isjungti kaitlente');
 
-randomuzduotys.summary();
-namuDarbai.summary();
+blynai.edit(0, 'Isplauti dubeni ir uzmaisyti tesla');
 
-// const namuDarbai = new Todo('Namu darbai');
-// console.log(namuDarbai.summary());
+blynai.remove(4);
+blynai.taskCompleted(0);
+blynai.taskCompleted(1);
+blynai.taskCompleted(2);
 
-/*  Namu darbas...
-klase: Suo
 
-parametrai:
-   - vardas
-   - kailio spalva
+blynai.summary();
 
-metodai:
-   - prisistatymas (Hello, I am {name} and my fur is {color})
-*/
+blynai.print();
+blynai.printCompletedOnly();
+blynai.printNotCompletedOnly();
+
+
+
+
