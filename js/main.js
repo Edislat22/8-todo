@@ -21,8 +21,16 @@ console.log(namuDarbai);
 randomuzduotys.summary();
 namuDarbai.summary();
 
-
-
-
 // const namuDarbai = new Todo('Namu darbai');
 // console.log(namuDarbai.summary());
+
+/*  Namu darbas...
+klase: Suo
+
+parametrai:
+   - vardas
+   - kailio spalva
+
+metodai:
+   - prisistatymas (Hello, I am {name} and my fur is {color})
+*/
